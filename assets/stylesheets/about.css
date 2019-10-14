@@ -15,17 +15,9 @@
 	box-sizing: border-box;
 }
 
-.inline-list {
-	list-style: none;
-}
+
 
 .inline-list > li {
 	padding: 12px 0;
 	border-bottom: 1px solid #e6e6e6;
-}
-
-.inline-list > li .list-title {
-	display: inline-block;
-	min-width: 120px;
-	font-weight: 500;
 }
