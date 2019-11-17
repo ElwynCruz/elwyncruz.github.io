@@ -70,7 +70,7 @@ body {
 
 }
 
-.inline-list > li .list-title {
+.inline-list > li > .list-title {
 	display: inline-block;
 	min-width: 65px;
 	font-weight: 600;
@@ -90,7 +90,7 @@ body {
 	padding-top: 3%;
 }
 
-.inline-list > li {
+.inline-list > .about-list {
 	padding: 8px 0;
 	border-bottom: 1px solid #e6e6e6;
 	font-size: 1em;
@@ -100,4 +100,10 @@ body {
 	padding-left: 8%;
 	padding-top: 5%;
 
+}
+
+.padding {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	
 }
