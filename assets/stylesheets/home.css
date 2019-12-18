@@ -16,10 +16,10 @@ html, body {
 /*
 
 .nav-item {
-	
+
 	max-width: 50%;
 	margin-left: 25%;
-	
+
 	text-align: center;
 	outline: ;
 }
@@ -117,4 +117,10 @@ body {
 
 .zero-padding-bottom {
 	padding-bottom: 0;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
 }
