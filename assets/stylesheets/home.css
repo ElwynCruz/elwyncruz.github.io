@@ -1,43 +1,23 @@
-@import url(https://db.onlinewebfonts.com/c/e3db270801cdfd1f0695ac4c3580d1b9?family=TrendRoughSansW00-Four);
 
-@font-face {font-family: "Trend Sans W00 Four";
-  src: url("fonts/@font-face/33ca94f43a53fc634323a6fe191ffd64.eot"); /* IE9*/
-  src: url("fonts/@font-face/33ca94f43a53fc634323a6fe191ffd64.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("fonts/@font-face/33ca94f43a53fc634323a6fe191ffd64.woff2") format("woff2"), /* chrome、firefox */
-  url("fonts/@font-face/33ca94f43a53fc634323a6fe191ffd64.woff") format("woff"), /* chrome、firefox */
-  url("fonts/@font-face/33ca94f43a53fc634323a6fe191ffd64.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("fonts/@font-face/33ca94f43a53fc634323a6fe191ffd64.svg#Trend Sans W00 Four") format("svg"); /* iOS 4.1- */
-}
 html, body {
 	height: 100%;
 	width: 100%;
-}
-/*-----------  END RESET ---------------*/
-/*
 
-.nav-item {
-
-	max-width: 50%;
-	margin-left: 25%;
-
-	text-align: center;
-	outline: ;
 }
-.nav-item:hover {
-	background-color: cyan;
-}
-*/
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.3;
 }
-
+.full-height {
+  height: 100%
+}
 body {
-	font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'europa',sans-serif;
 }
 .navbar-brand {
 	min-height: 55px;
-	padding: 0 15px 5px;
+  margin: 0 15px 5px;
+
 	max-height: 55px;
 
 }
@@ -47,27 +27,31 @@ body {
 }
 
 #home {
-	background: url(../images/philippines_blur.jpg) no-repeat center center fixed;
-	display: table;
 	height: 100%;
 	width: 100%;
-	position: relative;
-	background-size: cover;
-
+  min-height: 650px;
+  margin-top: 55px;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: center;
 }
+.circular-picture {
+  border-radius: 50%;
+}
+.height-small {
+  height: 15%;
+}
+.height-med {
+  height: 35%;
+}
+.height-large{
+  height: 50%;
+}
+
 .landing-text {
-	font-family:"Trend Sans W00 Four" !important;
-    font-size:16px;font-style:normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    -moz-osx-font-smoothing: grayscale;
-	padding-top: 12%;
-	color: goldenrod;
-
-
-
-
+	color: #141c3a;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .inline-list > li > .list-title {
@@ -95,7 +79,7 @@ body {
 	font-size: 1em;
 }
 
-.list-border-bottom {
+.has-border-bottom {
 	border-bottom: 1px solid #e6e6e6;
 }
 
@@ -111,8 +95,8 @@ body {
 }
 
 .padding {
-	padding-top: 0%;
-	padding-bottom: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 .zero-padding-bottom {
@@ -121,6 +105,7 @@ body {
 
 .fit-image {
   width: 100%;
-  object-fit: cover;
-  height: 300px;
+  max-height: 400px;
+  height: 70%;
+  object-fit: contain;
 }
