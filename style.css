@@ -1,0 +1,136 @@
+*{
+
+	list-style:none;
+	padding: 0;
+}
+body {
+}
+.skills {
+	width: 500px;
+
+}
+.skills li {
+	margin: 20px 0;
+}
+
+.bar {
+	background: #353b48;
+	display: block;
+	height: 3px;
+	border: 1px solid rgba(0.0.0.0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span {
+	height: 2px;
+	float: left;
+	background: #2187e7;
+}
+
+#c{
+	width: 90%;
+}
+#python {
+	width: 80%;
+}
+#bash {
+	width: 75%;
+}
+#html {
+	width: 65%;
+}
+#unity {
+	width: 65%;
+}
+
+@keyframes html {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 90%;
+	}
+}
+
+.table-responsive {
+	overflow-y: auto;
+}
+
+.table th, .table td {
+    border-top: none !important;
+    text-align:center;
+
+
+ }
+ .table {
+ 	margin-top: 10%;
+ }
+.col-2,
+ {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+ .table td {
+ 	cursor: pointer;
+ }
+
+.info {
+
+	display:none;
+
+	text-align: center;
+	align-items: center;
+  	justify-content: center;
+}
+
+#landing-info {
+	display: block;
+}
+
+.circular-picture {
+  border-radius: 50%;
+}
+
+.landing-text {
+	margin-top: 100px;
+	color: #141c3a;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#menu {
+	margin-top: 3%;
+	align-self: flex-start;
+	position:sticky;
+}
+
+.inline-list {
+	list-style: none;
+}
+
+#rest {
+	margin-top: 3%;
+}
+
+.project-entry {
+	padding-top: 3%;
+	border-top: 1px solid;
+	padding-bottom: 3%;
+	min-height: 300px;
+}
+
+.project-image {
+	max-height: 450px;
+}
+
+.carousel-image {
+	max-height: 750px;
+}
+
+.dance-body {
+	padding-top: 50px;
+	text-align: left;
+}
