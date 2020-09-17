@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Elwyn Cruz</title>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">  
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css">
@@ -14,7 +15,7 @@
 	var curPage = "landing";
 	var done = true;
 	$(document).ready(function() {
-			$("td").click(function(event){
+			$(".menu-button").click(function(event){
 			if (done) {
 				if (curPage != event.target.id) {
 					done = false;
@@ -34,186 +35,223 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="container-fluid h-100">
-	<div class="row  h-100">
-		<div class= "col-2 h-100 sticky-top"id="menu">
-			<div class="table-responsive h-100">
-				<table class="table">
-					<tbody>
-						<tr class="menu-button">
-							<td  id="landing">home</td>
-						</tr>
-						<tr class="menu-button">
-							<td  id="about-me">about me</td>
-						</tr>
-						<tr class="menu-button">
-							<td  id="project">projects</td>
-						</tr>
-						<tr class="menu-button"> 
-							<td id="dance">dance</td>
-						</tr>
+	<div class="sidenav">
+		<table class="table">
+			<tbody class="list-hover-slide">
+				<tr class="menu-button">
+					<td  id="landing">home</td>
+				</tr>
+				<tr class="menu-button">
+					<td  id="about-me">about</td>
+				</tr>
+				<tr class="menu-button">
+					<td  id="project">projects</td>
+				</tr>
+				<tr class="menu-button"> 
+					<td id="dance">dance</td>
+				</tr>
 
-						<tr class="menu-button">
-							<td  id="cooking">cooking</td>
-						</tr>
-						<tr class="menu-button">
-							<td id="gaming">gaming</td>
-						</tr>
-						<tr class="menu-button">
-							<td  id="resume">resume</td>
-						</tr>
-						<tr class="menu-button">
-							<td  id="contact">contact</td>
-						</tr>
-
-					</tbody>
-				</table>
+				<tr class="menu-button">
+					<td  id="cooking">cooking</td>
+				</tr>
+				<!-- <tr class="menu-button">
+					<td id="gaming">gaming</td>
+				</tr> -->
+				<tr class="menu-button">
+					<td  id="resume">resume</td>
+				</tr>
+				<tr class="menu-button">
+					<td  id="contact">contact</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+	<div class="container-fluid">
+		<div class="info" id="landing-info">
+			<img class="circular-picture" src="assets/images/About-me/me.jpeg">
+			<div class="landing-text">
+				Hey there! I'm Elwyn, better known by those close to me for my terrible puns or my goofy wide mouth smile. I'm also an aspiring software engineer with an interest in machine learning, animation, and game development! 
+				Check out the other tabs to learn my story. In the mean time, enjoy some pictures that describe me!
+			</div>
+			<div class="row img-wrapper">
+				<div class="col-lg-4 col-md-12 landing-images" id="img2"><img class="landing-image img-fluid" src="assets/images/boba_fiend.JPG" > <p>A boba fiend!</p></div>
+				<div class="col-lg-4 col-md-12 landing-images" id="img1"><img class="landing-image img-fluid" src="assets/images/photobomber.JPG"> <p>A dastardly photobomber!</p></div>
+				
+				<div class="col-lg-4 col-md-12 landing-images" id="img3"><img class="landing-image img-fluid" src="assets/images/About-me/pink.jpeg"> <p>A smiley boi!</p> </div>
 			</div>
 		</div>
-		<div class="col-9  h-100" id="rest">
-			<div class="info" id="landing-info">
-					<img class="circular-picture" src="assets/images/About-me/me.jpeg">
-					<div class="landing-text">
-						Hey there! I'm Elwyn, better known by those close to me for my terrible puns or my goofy wide mouth smile. I'm also an aspiring software engineer with an interest in machine learning, animation, and game development! Check out the other tabs to learn my story!
-					</div>
+	
+		<div class="info" id="about-me-info">
+			<div class="row">
+				<div class="col-md-7 text-left">
+					<h2>A little bit about me...</h2>
+					<p>Hi I'm Elwyn! I'm a second generation Filipino-American, pun enthusiast, avid gamer, boba lover, and an aspiring software engineer with interests in machine learning and game development. </p>
+					<p>I discovered a passion for computer science during my time in college. Coming in as a mechanical engineering major, I had no real exposure to computer science until I took an introductory course at UCLA. From there, I fell in love with the problem solving process behind computer science and that wonderous feeling that comes with finishing a new project. My goal is to be able to share that feeling with others, to create things that'll leave them with feelings of amazement, excitement, and happiness.</p>
+					<p>Here on my website I'll be posting updates to any of my projects, hobbies, and life in general. Take a look at some of the other tabs if you have time! </p>
 				</div>
-
-			<div class="info" id="about-me-info">
-				<div class="row">
-					<div class="col-7 text-left">
-						<h2>A little bit about me...</h2>
-						<p>Hi I'm Elwyn! I'm a second generation Filipino-American, pun enthusiast, avid gamer, boba lover, and an aspiring software engineer with interests in machine learning and game development. </p>
-						<p>I discovered a passion for computer science during my time in college. Coming in as a mechanical engineering major, I had no real exposure to computer science until I took an introductory course at UCLA. From there, I fell in love with the problem solving process behind computer science and that wonderous feeling that comes with finishing a new project. My goal is to be able to share that feeling with others, to create things that'll leave them with feelings of amazement, excitement, and happiness.</p>
-						<p>Here on my website I'll be posting updates to any of my projects, hobbies, and life in general. Take a look at some of the other tabs if you have time! </p>
-					</div>
-					<div class="col-5">
-						<img src="assets/images/About-me/polaroidsmiley.png">
-					</div>
+				<div class="col-md-5">
+					<img src="assets/images/About-me/polaroidsmiley.png">
 				</div>
 			</div>
-			<!-- <div class="info skills text-left" id="skills-info">
-				<div class="row">
-					<div class="col-12">
-						<h1> My Skills: </h1>
-						<ul class="text-left">
-						<li><h3>C++</h3><span class="bar"><span id="c"></span> </span></li>
-						<li><h3>Python</h3><span class="bar"><span id="python"></span> </span></li>
-						<li><h3>Bash/Linux</h3><span class="bar"><span id="bash"></span> </span></li>
-						<li><h3>HTML/CSS</h3><span class="bar"><span id="html"></span> </span></li>
-						<li><h3>Unity</h3><span class="bar"><span id="unity"></span> </span></li>
-				  	</ul>
-					</div>
-					<div class="col-6">
-					</div>
+		</div>
+		<!-- <div class="info skills text-left" id="skills-info">
+			<div class="row">
+				<div class="col-12">
+					<h1> My Skills: </h1>
+					<ul class="text-left">
+					<li><h3>C++</h3><span class="bar"><span id="c"></span> </span></li>
+					<li><h3>Python</h3><span class="bar"><span id="python"></span> </span></li>
+					<li><h3>Bash/Linux</h3><span class="bar"><span id="bash"></span> </span></li>
+					<li><h3>HTML/CSS</h3><span class="bar"><span id="html"></span> </span></li>
+					<li><h3>Unity</h3><span class="bar"><span id="unity"></span> </span></li>
+				</ul>
 				</div>
-			</div> -->
-			<div class="info" id="project-info">
-				<h1> PROJECTS </h1>
-				<div class="row project-entry">
-
-					
-					<div class="col-lg-7">
-						<h3> Bananagrams Online</h3>
-							<h5> May 2020 - Present </h5>
-							Bananagrams Online is an online version of the popular word game Bananagrams. I'm making it as a personal project using Unity. I'm hoping to bring the fun of in person Bananagrams to the internet and share my love for the game with others despite physical distance. 
-					</div>
-					<div class="col-lg-5">
-						<img class="img-fluid project-image" src="assets/images/Projects/Bananagrams/preview.jpg">
-					</div>
+				<div class="col-6">
 				</div>
-				<div class="row project-entry">
-				
+			</div>
+		</div> -->
+		<div class="info" id="project-info">
+			<h1> PROJECTS </h1>
+			<div class="row project-entry">
 				<div class="col-lg-7">
-					<h3> EverWeapon </h3>  
-						<h5>February 2020 - Present</h5>  
-						
-						EverWeapon is a top-down RPG I am making with the student organization ACM Game Studio at UCLA. The game emphasizes unique boss fights and scaling difficulty. My personal contributions have been in the design of mechanics and environment for each boss and the implementation of the ranger boss's attacks. The GIFs shown here are some of our animations that we have for the player's attacks. 
+					<h3>ANT</h3>
+						<h5> June 2020 - Present </h5>
+						<p>I'm working on the ANT as a research assistant for SMERC at UCLA. 
+							The ANT is an autonomous last mile delivery robot for larger packages.
+							This project is defintely the most interesting and most educational projects I've worked on.
+							It's taught me to use softwares and languages like ROS and Swift, and since it is powered by a Linux computer, I've gotten more comfortable using terminal and the command line on Linux.
+
+						</p>
 				</div>
 				<div class="col-lg-5">
-					<img class="img-fluid project-image" src="assets/images/Projects/EverWeapon/spear_front.gif">
-					<img class="img-fluid project-image" src="assets/images/Projects/EverWeapon/sword_front.gif">
+					<img class="img-fluid project-image" src="assets/images/Projects/ANT/ANT.png">
 				</div>
-				</div>
-				<div class="row project-entry">
-					
+			</div>
+			<div class="row project-entry">
 				<div class="col-lg-7">
-					<h3> Scene Recognition </h3>
-						<h5>October 2019 </h5> 
-							Scene Recognition is a project I completed for my Computer Vision course. In it, I developed and trained a machine learning model using SIFT, SURF, and ORB feature detection in order to classify pictures of rooms with around 70% accuracy. The accuracy for each of these methods of feature detection were compared to discover the most effective one.
+					<h3> Bananagrams Online</h3>
+						<h5> May 2020 - Present </h5>
+						Bananagrams Online is an online version of the popular word game Bananagrams. I'm making it as a personal project using Unity. 
+						I'm hoping to bring the fun of in person Bananagrams to the internet and share my love for the game with others despite physical distance.
+						Currently, I have implemented online multiplayer where players can connect to a room to play, however the UI and some game mechanics are still a work in progress. 
 				</div>
 				<div class="col-lg-5">
-						<img class="img-fluid project-image" src="assets/images/Projects/Scene-Recognition/SceneRecognition.png">
+					<img class="img-fluid project-image" src="assets/images/Projects/Bananagrams/preview.jpg">
 				</div>
-				</div>
+			</div>
+			<div class="row project-entry">
+			
+			<div class="col-lg-7">
+				<h3> EverWeapon </h3>  
+					<h5>February 2020 - June 2020</h5>  
+					
+					EverWeapon is a top-down RPG I made with the student organization ACM Game Studio at UCLA. The game emphasizes unique boss fights and scaling difficulty. My personal contributions have been in the design of mechanics and environment for each boss and the implementation of the ranger boss's attacks. The GIFs shown here are some of our animations that we have for the player's attacks. 
+			</div>
+			<div class="col-lg-5">
+				<img class="img-fluid project-image" src="assets/images/Projects/EverWeapon/spear_front.gif">
+				<img class="img-fluid project-image" src="assets/images/Projects/EverWeapon/sword_front.gif">
+			</div>
+			</div>
+			<div class="row project-entry">
 				
-				<div class="row project-entry">
-				
-				<div class="col-lg-7">
-					<h3> ZombieDash </h3>  
-						<h5>February 2019</h5> 
-						ZombieDash is a real time game I implemented for my Data Structures and Algorithms class. In the game, the player rescues citizens from zombies by leading them towards an exit. The entire project was done using C++. Some interesting aspects were the design of weapons and other tools for the player to fight off and survive the hordes of zombies. Designed weapons and tools for the player to fight and survive the hordes of zombies, such as vaccines and flamethrowers.
-				</div>
-				<div class="col-lg-5 ">
-					<img class="img-fluid project-image" src="assets/images/Projects/ZombieDash/ZombieDash.png">
-				</div>
-				</div>
+			<div class="col-lg-7">
+				<h3> Scene Recognition </h3>
+					<h5>October 2019 </h5> 
+						Scene Recognition is a project I completed for my Computer Vision course. 
+						In it, I developed and trained a machine learning model using SIFT, SURF, and ORB feature detection in order to classify pictures of rooms with around 70% accuracy. The accuracy for each of these methods of feature detection were compared to discover the most effective one.
 			</div>
-			<div class="info" id="dance-info">
-				<h3>"I can't dance . . . "</h3>
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				  <ol class="carousel-indicators">
-				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				  </ol>
-				  <div class="carousel-inner">
-				    <div class="carousel-item active">
-				      <img class="d-block w-100 carousel-image" src="assets/images/Dance/sol.jpg" alt="First slide">
-				    </div>
-				    <div class="carousel-item">
-				      <img class="d-block w-100 carousel-image" src="assets/images/Dance/kaizen.jpg" alt="Second slide">
-				    </div>
-				    <div class="carousel-item">
-				      <img class="d-block w-100 carousel-image" src="assets/images/Dance/pocket-monsters.jpg" alt="Third slide">
-				    </div>
-				  </div>
-				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				    <span class="sr-only">Previous</span>
-				  </a>
-				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				    <span class="sr-only">Next</span>
-				  </a>
+			<div class="col-lg-5">
+					<img class="img-fluid project-image" src="assets/images/Projects/Scene-Recognition/SceneRecognition.png">
+			</div>
+			</div>
+			
+			<div class="row project-entry">
+			
+			<div class="col-lg-7">
+				<h3> ZombieDash </h3>  
+					<h5>February 2019</h5> 
+					ZombieDash is a real time game I implemented for my Data Structures and Algorithms class. In the game, the player rescues citizens from zombies by leading them towards an exit. 
+					The entire project was done using C++. 
+					Some interesting aspects were the design of weapons and other tools for the player to fight off and survive the hordes of zombies.
+					Overall, this project was a really fun way to learn to use data structures to make a real game.
+			</div>
+			<div class="col-lg-5 ">
+				<img class="img-fluid project-image" src="assets/images/Projects/ZombieDash/ZombieDash.png">
+			</div>
+			</div>
+		</div>
+		<div class="info" id="dance-info">
+			<h3 class="dance-title">"I can't dance . . . "</h3>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block carousel-image mx-auto" src="assets/images/Dance/sol.jpg" alt="First slide">
 				</div>
-				<div class="dance-body">
-					At least, that's what I'd always thought. Then I joined a beginner dance team and I found a new passion for myself! Dance has provided me a means of expressing myself with my body in ways the words just can't. It's helped shape me into the person I am today, allowing me to be more free and confident.
+				<div class="carousel-item ">
+					<img class="d-block carousel-image mx-auto" src="assets/images/Dance/kaizen.jpg" alt="Second slide">
 				</div>
-			</div>
-			<div class="info" id="cooking-info">
-				sorry this section is under construction!
-			</div>
-			<div class="info" id="gaming-info">
-				sorry this section is under construction!
-			</div>
-			<div class="info " id="resume-info">
-				<div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" src="assets/images/resume.pdf" > </iframe>
+				<div class="carousel-item ">
+					<img class="d-block carousel-image mx-auto" src="assets/images/Dance/pocket-monsters.jpg" alt="Third slide">
 				</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+				</a>
 			</div>
-			<div class="info" id="contact-info">
-				<address>
-				I'd love to hear from you! Feel free to email me at
-					<a href="mailto:elwyncruz@g.ucla.edu">elwyncruz@g.ucla.edu</a>, or contact me through the following social media:
-				</address>
+			<div class="dance-body">
+				<p>At least, that's what I'd always thought. 
+				But when I came to UCLA for an overnight orientation, Bruin Life Weekend, one of the first things I saw was a competitive dance team: Samahang Modern. 
+				They were a subset of Samahang Pilipino, a cultural organization for Filipinos like me.
+				And they were really amazing. I'd always wanted to be able to dance, but I'd never been very musically inclined, so I always figured that I just couldn't. </p>
+				<p>But then I found a beginner-friendly dance organization - Foundations. 
+					I joined one of their training teams and honestly it was both horrifying and amazing. 
+					It was scary and awkward at first, diving into a group of 30 or so people and dancing in front of them when I'd never even felt comfortable dancing by myself. 
+					But I got to meet so many people, and have so many unforgettable experiences, that I would do all that awkwardness over again.
+					So dance truly has given me so much more than just some movements to music. It's given me a community of supportive friends. It's given me a new creative outlet, a way to express myself in ways words can't. It's given me strength to face and overcome my fears. Dance has really changed me for the better.
+				</p>
+				<p>
+					Now, I'm on a competitive dance team, VSU Modern.
+					Looking back, I've come a long way, but there's still an even longer path ahead of me.
+					And I'm so thankful for that. This dance journey won't end anytime soon.
+					So for now, I'll be documenting it here.					
+				</p>
+			</div>
+		</div>
+		<div class="info" id="cooking-info">
+			sorry this section is under construction!
+		</div>
+		<!-- <div class="info" id="gaming-info">
+			sorry this section is under construction!
+		</div> -->
+		<div class="info " id="resume-info">
+			<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="assets/images/resume.pdf" > </iframe>
+			</div>
+		</div>
+		<div class="info" id="contact-info">
+			<address>
+			I'd love to hear from you! Feel free to email me at
+				<a href="mailto:elwyncruz@g.ucla.edu">elwyncruz@g.ucla.edu</a>, or contact me through the following social media:
+			</address>
 
-				<a href="https://www.facebook.com/elwyn.cruz.75" class="fa fa-facebook fa-lg"></a>
-				<a href="https://github.com/ElwynCruz" class="fa fa-github fa-lg"></a>
-				<a href="https://www.linkedin.com/in/elwyn-c-143b16ba/" class="fa fa-linkedin fa-lg"></a>
-			</div>
+			<a href="https://www.facebook.com/elwyn.cruz.75" class="fa fa-facebook fa-lg"></a>
+			<a href="https://github.com/ElwynCruz" class="fa fa-github fa-lg"></a>
+			<a href="https://www.linkedin.com/in/elwyn-c-143b16ba/" class="fa fa-linkedin fa-lg"></a>
 		</div>
 	</div>
-</div>
+
+
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
