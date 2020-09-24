@@ -1,6 +1,17 @@
 body {
 	background-color:#f1f1f1;
 }
+
+.unstyled {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.unstyled a{
+	text-decoration: none;
+}
+
 .sidenav {
 	height: 100%; /* Full-height */
 	width: 250px; /* Set the width of the sidebar */
@@ -15,36 +26,66 @@ body {
   }
   
   /* The navigation menu links */
-  td {
-	padding: 6px 8px 6px 16px;
+.main-nav a {
+	padding: 12px 0px;
 	text-decoration: none;
 	font-size: 25px;
 	color: #040404;
 	display: block;
 	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	border-bottom: 1px solid gray;
+    
+	cursor: pointer;
   }
-  
+
   /* When you mouse over the navigation links, change their color */
-  td:hover {
+  li:hover {
 	color:#b48c36;
   }
   
-  
- 
 
 
-  table {
+
+.table {
 	border-spacing: 0px;
 	border-collapse: separate;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.contact-nav {
+	width: 100%;
+	
+}
+.contact-links {
+	border-bottom: 1px solid gray;
+	overflow: auto;
 }
 
-.table td {
-    border-top: 1px outset black;
-    text-align:center;
-	cursor: pointer;
+.contact-links li {
+	float: left;
+	width: 33%;
+	border-left: solid 1px gray;
+}
 
- }
+.contact-links li:first-child {
+	border:none;
+}
 
+
+.contact-links a {
+	display: block;
+	height: 4.5em;
+	text-align: center;
+	color: #3c3735;
+	font-family: 'Oswald', sans-serif;
+	padding-top: 24px;
+	font-size: 16px
+}
+
+.contact-links a:hover {
+	color: #dfdbd9;
+}
 
 
 .info {
@@ -132,17 +173,17 @@ body {
 *, :before, :after {
 	box-sizing: border-box;
 }
-.list-hover-slide tr {
+.list-hover-slide li {
 	position: relative;
 	overflow: hidden;
 }
-.list-hover-slide td {
-	display: block;
+.list-hover-slide a {
+	
 	position: relative;
 	z-index: 1;
 	transition: 0.35s ease color;
 }
-.list-hover-slide td:before {
+.list-hover-slide a:before {
 	content: '';
 	display: block;
 	z-index: -1;
@@ -154,7 +195,8 @@ body {
 	border-right: solid 5px #b48c36;
 	background: #3c3735;
 	transition: 0.35s ease left;
+	
 }
-.list-hover-slide td.is-current:before, .list-hover-slide td:hover:before {
+.list-hover-slide a.is-current:before, .list-hover-slide a:hover:before {
 	left: 0;
 }
