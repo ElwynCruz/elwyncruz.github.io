@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import { ThemeProvider } from "next-themes";
 import LenisProvider from "@/providers/LenisProvider";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,7 @@ export default function RootLayout({
             <div className="w-full ">
               <Navigation />
               <main className="mt-16 min-h-[calc(100vh-64px)] transition-colors duration-200 bg-background text-foreground">
-                {children}
+                <Suspense>{children}</Suspense>
               </main>
             </div>
           </LenisProvider>
