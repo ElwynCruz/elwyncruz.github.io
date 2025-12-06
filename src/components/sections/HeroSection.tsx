@@ -39,7 +39,7 @@ export default function HeroSection() {
           <div
             className={cn(
               "flex flex-col items-center md:items-start gap-2",
-              "transition-[opacity,transform] duration-1000 opacity-0 translate-y-1",
+              "transition-[opacity,transform] duration-2000 opacity-0 translate-y-1",
               isDoneTyping && "opacity-100 translate-y-0",
             )}
           >
