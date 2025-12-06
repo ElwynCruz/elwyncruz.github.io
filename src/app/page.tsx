@@ -18,7 +18,6 @@ export default function Home() {
     gsap.to(window, {
       duration: 1,
       scrollTo: `#${selectedSection}`,
-      position: "top",
     });
   }, [selectedSection]);
   return (
