@@ -1,12 +1,14 @@
 import { Blog, BlogTag } from "@/types/blog";
 
 // TODO: move this to somewhere it's easier to edit
-export const blogs: Blog[] = [{
-    title: 'I Became a React Query Merchant',
-    subheader: "I'm begging you to stop using useEffect to manage all your network requests.",
+export const blogs: Blog[] = [
+  {
+    title: "I Became a React Query Merchant",
+    subheader:
+      "I'm begging you to stop using useEffect to manage all your network requests.",
     tags: [BlogTag.CODING],
-    slug: 'react-query-merchant',
-    createdOn: '2025-12-04',
+    slug: "react-query-merchant",
+    createdOn: "2025-12-04",
     content: `
 
 As a software consultant, I've seen my fair share of React codebases. And unfortunately, a lot of them have not been pretty.
@@ -114,14 +116,14 @@ You'll also notice that the useQuery hook can (and should) live in it's own sepa
 And this is really only the start of the benefits React Query gives you. If this isn't enough to get you started with it, please [read more about it](https://tanstack.com/query/latest).
 
 So please I'm begging you to stop using \`useEffect\` for network requests. Managing request data in \`useState\` yourself is too much for anything that's more than a simple app. React Query won't just save you time, it'll save your sanity. You'll thank yourself in the future.
-`
+`,
   },
   {
-    title: 'Pretty Decent Chili Oil',
+    title: "Pretty Decent Chili Oil",
     subheader: "A recipe for at least one person's favorite chili oil.",
     tags: [BlogTag.COOKING],
-    slug: 'chili-oil',
-    createdOn: '2025-12-04',
+    slug: "chili-oil",
+    createdOn: "2025-12-04",
     content: `
 #### | NOTE: Pictures to come when I make my next batch
 
@@ -190,14 +192,14 @@ And for fun here's a recipe using this chili oil:
 - 2 parts chili oil
 - 1 part soy sauce
 - 1 part black vinegar
-`
+`,
   },
   {
-    title: 'M24:TBD - My Intro to Game Dev with Godot',
+    title: "M24:TBD - My Intro to Game Dev with Godot",
     subheader: "The start of my game developer journey with my partner.",
     tags: [BlogTag.CODING, BlogTag.GAMING],
-    slug: 'm24-tbd-1',
-    createdOn: '2025-12-05',
+    slug: "m24-tbd-1",
+    createdOn: "2025-12-05",
     content: `
 Games are what really got me interested in coding, but I don't have extensive experience in game dev at all. While I've experimented with different engines, like Unity or Unreal, I've always found it to be generally pretty difficult to get past an initial prototype. So I recently started working with my partner to start our own little game dev "club" where we meet weekly to check progress and make sure we're doing something relevant to it every week. They're handling the more art/design side of things, while I'm handling the code.
 
@@ -213,5 +215,5 @@ Honestly we don't have much to show, but I have added a dash and some on collisi
 ## Coming Up
 Next up, I'm working on replacing the placeholder assets with some pixel art assets that my partner is working on. For the game logic, we're still hashing out how we want to apply different operators to numbers, but I'll be working on a pick-up feature where the player can pick up a number by colliding with it, and have that number float around behind them.
 `,
-  }
-]
+  },
+];

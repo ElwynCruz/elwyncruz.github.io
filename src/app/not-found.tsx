@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <SectionContainer>
-      <Header size="h2">Doesn't seem like we have that here...</Header>
-      <p>You might've gotten lost.</p>
+      <Header size="h2">Doesn&apos;t seem like we have that here...</Header>
+      <p>You might&apos;ve gotten lost.</p>
       <Button asChild>
         <Link href="/">Return Home</Link>
       </Button>

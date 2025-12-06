@@ -64,9 +64,9 @@ export default function HeroSection() {
               software.
             </p>
             <p className="text-center md:text-left">
-              When I'm not coding, I'm usually experimenting with new recipes,
-              enjoying board games with friends, or diving into a game of League
-              of Legends.
+              When I&apos;m not coding, I&apos;m usually experimenting with new
+              recipes, enjoying board games with friends, or diving into a game
+              of League of Legends.
             </p>
             <Button size="lg" className="font-semibold mx-auto md:ml-0 mt-2">
               <Link href="/?section=experience">Learn More</Link>

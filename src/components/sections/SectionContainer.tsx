@@ -16,3 +16,5 @@ export const SectionContainer = React.forwardRef<
     />
   );
 });
+
+SectionContainer.displayName = "SectionContainer";

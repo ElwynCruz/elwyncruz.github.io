@@ -2,7 +2,7 @@ import { Blog } from "@/types/blog";
 import { TagBadge } from "./TagBadge";
 import { RenderMarkdown } from "../ui/render-markdown";
 import { SectionHeader, SectionSubheader } from "../sections/Headers";
-import { ArrowBigLeft, ArrowLeft, Mail } from "lucide-react";
+import { ArrowLeft, Mail } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
 

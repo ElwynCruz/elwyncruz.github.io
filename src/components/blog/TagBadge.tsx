@@ -1,6 +1,5 @@
 import { BlogTag } from "@/types/blog";
 import { Badge } from "../ui/badge";
-import { cn } from "@/lib/utils";
 
 type TagBadgeProps = {
   tag: BlogTag;

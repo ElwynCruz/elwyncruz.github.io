@@ -1,4 +1,3 @@
-import React from "react";
 import Markdown, { Components } from "react-markdown";
 import { Anchor } from "./anchor";
 import { Header } from "./header";

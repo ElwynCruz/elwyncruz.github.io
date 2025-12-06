@@ -7,3 +7,5 @@ export const Anchor = React.forwardRef<
 >(({ className, ...props }, ref) => {
   return <a className={cn("underline", className)} ref={ref} {...props} />;
 });
+
+Anchor.displayName = "Anchor";

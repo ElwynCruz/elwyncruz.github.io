@@ -2,8 +2,7 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { Badge } from "./badge";
 import { ChevronDown } from "lucide-react";
-import Markdown from "react-markdown";
-import { Anchor } from "./anchor";
+import { RenderMarkdown } from "./render-markdown";
 
 const Timeline = React.forwardRef<
   HTMLDivElement,
@@ -11,18 +10,15 @@ const Timeline = React.forwardRef<
 >(({ className, ...props }, ref) => {
   return <div ref={ref} className={className} {...props} />;
 });
+Timeline.displayName = "Timeline";
 
 interface TimelineItemProps extends React.HTMLAttributes<HTMLDivElement> {
-  isExpanded?: boolean;
   onToggle?: () => void;
   expandable?: boolean;
 }
 
 const TimelineItem = React.forwardRef<HTMLDivElement, TimelineItemProps>(
-  (
-    { className, isExpanded, onToggle, expandable, children, ...props },
-    ref,
-  ) => {
+  ({ className, onToggle, expandable, children, ...props }, ref) => {
     return (
       <div
         ref={ref}
@@ -39,6 +35,7 @@ const TimelineItem = React.forwardRef<HTMLDivElement, TimelineItemProps>(
     );
   },
 );
+TimelineItem.displayName = "TimelineItem";
 
 interface TimelineHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
   isLast: boolean;
@@ -65,6 +62,8 @@ const TimelineHeader = React.forwardRef<HTMLDivElement, TimelineHeaderProps>(
   },
 );
 
+TimelineHeader.displayName = "TimelineHeader";
+
 type TimelineExpandProps = {
   isExpanded: boolean;
   classNames?: string;
@@ -82,6 +81,8 @@ const TimelineExpand = ({ isExpanded, classNames }: TimelineExpandProps) => {
     />
   );
 };
+
+TimelineExpand.displayName = "TimelineExpand";
 
 interface TimelineTitleProps
   extends React.HTMLAttributes<HTMLParagraphElement> {
@@ -103,6 +104,8 @@ const TimelineTitle = React.forwardRef<
   />
 ));
 
+TimelineTitle.displayName = "TimelineTitle";
+
 const TimelineTime = ({
   className,
   ...props
@@ -119,6 +122,8 @@ const TimelineTime = ({
   );
 };
 
+TimelineTime.displayName = "TimelineTime";
+
 const TimelineDescription = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -131,6 +136,8 @@ const TimelineDescription = React.forwardRef<
     />
   );
 });
+
+TimelineDescription.displayName = "TimelineDescription";
 
 interface TimelineContentProps extends React.HTMLAttributes<HTMLDivElement> {
   isExpanded: boolean;
@@ -150,11 +157,13 @@ const TimelineContent = React.forwardRef<HTMLDivElement, TimelineContentProps>(
         )}
         {...props}
       >
-        <Markdown components={{ a: Anchor }}>{content}</Markdown>
+        <RenderMarkdown content={content} />
       </div>
     );
   },
 );
+
+TimelineContent.displayName = "TimelineContent";
 
 export {
   Timeline,

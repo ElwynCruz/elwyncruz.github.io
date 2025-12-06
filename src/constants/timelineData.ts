@@ -1,6 +1,5 @@
 import { TimelineEntry } from "@/types/timeline";
 
-
 export const timelineData: TimelineEntry[] = [
   {
     slug: "entrance",
@@ -51,7 +50,6 @@ This was also my first introduction to React, and I've only fallen more in love 
     title: "Lead Developer, TechEmpower",
     subheader: "March 2025 - Present",
     description: `Nowadays, as a Lead Developer, while I still spend a good majority of my time writing code for new features, bug fixes, and performance optimizations, I also have a lot more ownership over the design of our architecture. I also have the fortune of being able to grow and lead developers, serving as an interface between them and the client, ensuring we follow best practices via code review, and setting realistic project timelines. And lastly, I help guide client product decisions toward more cohesive and user-friendly designs.
-`   
-    ,
+`,
   },
 ];

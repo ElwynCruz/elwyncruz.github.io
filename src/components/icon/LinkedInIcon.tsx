@@ -6,7 +6,7 @@ export const LinkedInIcon = ({
   className,
   width = 16,
   height = 16,
-  fill,
+  fill = "currentColor",
   ...props
 }: Props) => {
   return (
@@ -14,7 +14,7 @@ export const LinkedInIcon = ({
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}
-      fill="currentColor"
+      fill={fill}
       className={cn("bi bi-linkedin", className)}
       {...props}
     >

@@ -7,13 +7,7 @@ import { cn } from "@/lib/utils";
 
 type Props = React.ComponentProps<"code"> & ExtraProps & { inline?: boolean };
 
-export const Code = ({
-  children,
-  className,
-  node,
-  inline,
-  ...props
-}: Props) => {
+export const Code = ({ children, className, inline, ...props }: Props) => {
   const code = String(children?.toString()).trim();
   const match = className?.match(/language-(\w+)/);
   const language = match ? match[1] : undefined;
