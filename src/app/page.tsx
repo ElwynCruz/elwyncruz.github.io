@@ -1,18 +1,16 @@
 "use client";
 
-import { use, useEffect } from "react";
+import { useEffect } from "react";
+import gsap from "gsap";
 import HeroSection from "@/components/sections/HeroSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import HobbiesSection from "@/components/sections/HobbiesSection";
 import ContactSection from "@/components/sections/ContactSection";
-import gsap from "gsap";
+import { useSearchParams } from "next/navigation";
 
-export default function Home({
-  searchParams,
-}: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-}) {
-  const selectedSection = use(searchParams).section;
+export default function Home() {
+  const searchParams = useSearchParams();
+  const selectedSection = searchParams.get("section");
   useEffect(() => {
     if (selectedSection === undefined) {
       return;

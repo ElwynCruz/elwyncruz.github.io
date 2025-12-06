@@ -9,3 +9,4 @@
 - react-shiki
 
 ## TODO:
+- Read blog data from an external source
