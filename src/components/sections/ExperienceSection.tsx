@@ -40,7 +40,6 @@ export default function ExperienceSection() {
           return (
             <TimelineItem
               key={entry.slug}
-              isExpanded={isExpanded}
               onToggle={() => hasDescription && toggleItem(entry.slug)}
               expandable={hasDescription}
             >
