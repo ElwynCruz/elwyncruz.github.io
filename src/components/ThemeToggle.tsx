@@ -19,9 +19,9 @@ export function ThemeToggle({
   showLabel = false,
 }: ThemeToggleProps) {
   const [isMounted, setIsMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
-  const isDark = theme === Theme.DARK;
+  const isDark = resolvedTheme === Theme.DARK;
 
   const cycleTheme = () => {
     if (isDark) {
